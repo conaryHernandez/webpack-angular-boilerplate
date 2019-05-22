@@ -1,0 +1,329 @@
+.card::before {
+  display: block;
+  width: 8rem;
+  margin-bottom: -40px;
+  position: relative;
+  font-size: 12em;
+  line-height: 1em;
+  background-color: white; }
+
+.card.Red::before {
+  color: red; }
+
+.Spades.Ace::before {
+  content: "\1F0A1"; }
+
+.Spades.value-2::before {
+  content: "\1F0A2"; }
+
+.Spades.value-3::before {
+  content: "\1F0A3"; }
+
+.Spades.value-4::before {
+  content: "\1F0A4"; }
+
+.Spades.value-5::before {
+  content: "\1F0A5"; }
+
+.Spades.value-6::before {
+  content: "\1F0A6"; }
+
+.Spades.value-7::before {
+  content: "\1F0A7"; }
+
+.Spades.value-8::before {
+  content: "\1F0A8"; }
+
+.Spades.value-9::before {
+  content: "\1F0A9"; }
+
+.Spades.value-10::before {
+  content: "\1F0AA"; }
+
+.Spades.Jack::before {
+  content: "\1F0AB"; }
+
+.Spades.Queen::before {
+  content: "\1F0AD"; }
+
+.Spades.King::before {
+  content: "\1F0AE"; }
+
+.Hearts.Ace::before {
+  content: "\1F0B1"; }
+
+.Hearts.value-2::before {
+  content: "\1F0B2"; }
+
+.Hearts.value-3::before {
+  content: "\1F0B3"; }
+
+.Hearts.value-4::before {
+  content: "\1F0B4"; }
+
+.Hearts.value-5::before {
+  content: "\1F0B5"; }
+
+.Hearts.value-6::before {
+  content: "\1F0B6"; }
+
+.Hearts.value-7::before {
+  content: "\1F0B7"; }
+
+.Hearts.value-8::before {
+  content: "\1F0B8"; }
+
+.Hearts.value-9::before {
+  content: "\1F0B9"; }
+
+.Hearts.value-10::before {
+  content: "\1F0BA"; }
+
+.Hearts.Jack::before {
+  content: "\1F0BB"; }
+
+.Hearts.Queen::before {
+  content: "\1F0BD"; }
+
+.Hearts.King::before {
+  content: "\1F0BE"; }
+
+.Diamonds.Ace::before {
+  content: "\1F0C1"; }
+
+.Diamonds.value-2::before {
+  content: "\1F0C2"; }
+
+.Diamonds.value-3::before {
+  content: "\1F0C3"; }
+
+.Diamonds.value-4::before {
+  content: "\1F0C4"; }
+
+.Diamonds.value-5::before {
+  content: "\1F0C5"; }
+
+.Diamonds.value-6::before {
+  content: "\1F0C6"; }
+
+.Diamonds.value-7::before {
+  content: "\1F0C7"; }
+
+.Diamonds.value-8::before {
+  content: "\1F0C8"; }
+
+.Diamonds.value-9::before {
+  content: "\1F0C9"; }
+
+.Diamonds.value-10::before {
+  content: "\1F0CA"; }
+
+.Diamonds.Jack::before {
+  content: "\1F0CB"; }
+
+.Diamonds.Queen::before {
+  content: "\1F0CD"; }
+
+.Diamonds.King::before {
+  content: "\1F0CE"; }
+
+.Clubs.Ace::before {
+  content: "\1F0D1"; }
+
+.Clubs.value-2::before {
+  content: "\1F0D2"; }
+
+.Clubs.value-3::before {
+  content: "\1F0D3"; }
+
+.Clubs.value-4::before {
+  content: "\1F0D4"; }
+
+.Clubs.value-5::before {
+  content: "\1F0D5"; }
+
+.Clubs.value-6::before {
+  content: "\1F0D6"; }
+
+.Clubs.value-7::before {
+  content: "\1F0D7"; }
+
+.Clubs.value-8::before {
+  content: "\1F0D8"; }
+
+.Clubs.value-9::before {
+  content: "\1F0D9"; }
+
+.Clubs.value-10::before {
+  content: "\1F0DA"; }
+
+.Clubs.Jack::before {
+  content: "\1F0DB"; }
+
+.Clubs.Queen::before {
+  content: "\1F0DD"; }
+
+.Clubs.King::before {
+  content: "\1F0DE"; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.woff2) format("woff2");
+  font-weight: normal; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Thin.woff2) format("woff2");
+  font-weight: 100; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Bold.woff2) format("woff2");
+  font-weight: 700; }
+
+html {
+  line-height: 1.618;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #212021;
+  font-family: Roboto; }
+
+header {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #212021;
+  box-shadow: 0 8px 7px -8px rgba(0, 0, 0, 0.5); }
+
+h1 {
+  margin: 0;
+  font-size: 5rem;
+  text-align: center; }
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 100; }
+
+h3 {
+  margin-top: .25em;
+  margin-bottom: .25em; }
+
+form {
+  text-align: center; }
+
+.row {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em; }
+  .row::after {
+    content: '';
+    clear: both;
+    display: table; }
+
+label {
+  font-size: 2rem;
+  margin-right: 1rem;
+  float: left; }
+
+input {
+  width: 35%;
+  border: 1px solid #C7C5C7;
+  border-radius: 4px;
+  font-size: 2rem;
+  color: #666466;
+  padding: .5rem 1rem;
+  margin: 0;
+  float: right; }
+  input.error {
+    border-color: red; }
+  input:focus, input:active {
+    border-color: #212021;
+    color: #212021;
+    outline: none; }
+  input[type=checkbox] {
+    display: none; }
+
+.checkbox {
+  display: block;
+  width: 53px;
+  height: 53px;
+  border: 1px solid #C7C5C7;
+  border-radius: 4px;
+  position: relative;
+  float: right; }
+  .checkbox.checked::after {
+    position: absolute;
+    left: 2px;
+    top: -4px;
+    content: '\2713';
+    color: forestgreen;
+    font-size: 4em;
+    line-height: 1; }
+
+button {
+  font-size: 2rem;
+  border: 2px solid #C7C5C7;
+  border-radius: 4px;
+  padding: .5rem 1rem;
+  color: #666466;
+  background: #fff;
+  cursor: pointer; }
+  button:hover, button:active {
+    border-color: #212021;
+    color: #212021; }
+
+.hand {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both; }
+  .hand .playerInfo {
+    width: 9rem;
+    margin-right: .5em;
+    float: left; }
+    .hand .playerInfo h3 {
+      text-align: right; }
+
+ul {
+  float: left;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 2rem; }
+  ul::after {
+    content: '';
+    clear: both;
+    display: table; }
+
+li {
+  list-style-type: none;
+  float: left;
+  text-align: center; }
+  li span {
+    font-size: 0; }
+
+p {
+  margin-top: 0;
+  text-align: right; }
+
+.controls {
+  clear: both;
+  position: fixed;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+.end-message {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0 4rem;
+  clear: both; }
+
+
+/*# sourceMappingURL=bundle.css.map*/
