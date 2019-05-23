@@ -14,12 +14,15 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^1.0.0-rc.0",
     "webpack": "^4.32.1",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.2",
+    "webpack-merge": "^4.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config config/webpack.config.js"
+    "build:dev": "webpack --env=dev --config config/webpack.config.js",
+    "build:prod": "webpack --env=prod --config config/webpack.config.js"
   },
   "author": "Conary Hernandez",
   "license": "MIT"
