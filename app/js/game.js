@@ -1,6 +1,8 @@
 ﻿import {Deck} from './deck';
 import {Player} from './player';
 
+console.log('hola');
+
 class Game {
     constructor(playerNames, acesHigh) {
         let cards = new Deck(acesHigh);

@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -8,6 +9,14 @@ module.exports = {
 	},
 	module: {
 		rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          // eslint options (if necessary)
+        }
+      },
 			{
 				test: /\.woff2$/,
 				loader: 'file-loader?name=fonts/[name].[ext]'
@@ -27,11 +36,12 @@ module.exports = {
 			minify: {
 				removeScriptTypeAttributes: true
 			}
-		})
+		}),
+		new CleanWebpackPlugin()
 	],
   optimization: {
     splitChunks: {
-      chunks: 'async',
+      chunks: 'all',
       minSize: 30000,
       maxSize: 0,
       minChunks: 1,

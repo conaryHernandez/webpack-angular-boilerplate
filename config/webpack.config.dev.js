@@ -1,5 +1,6 @@
 const webpackMerge = require('webpack-merge');
 const baseConfig = require('./webpack.config.base');
+const devServer = require('webpack-dev-server');
 const path = require('path');
 
 module.exports = webpackMerge(baseConfig, {
@@ -32,4 +33,7 @@ module.exports = webpackMerge(baseConfig, {
 		]
 	},
 	devtool: 'eval',
+	devServer: {
+		port: 1337,
+	}
 })

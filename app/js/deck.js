@@ -1,7 +1,5 @@
 ﻿import {Card} from './card';
 
-console.log('hola');
-
 class Deck {
     constructor(acesHigh) {
         const COLORS = ['Black', 'Red'];
