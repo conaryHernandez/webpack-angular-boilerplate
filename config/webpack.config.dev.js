@@ -1,7 +1,12 @@
 const webpackMerge = require('webpack-merge');
 const baseConfig = require('./webpack.config.base');
+const path = require('path');
 
 module.exports = webpackMerge(baseConfig, {
+	output: {
+		path: path.join(__dirname, '../dist'),
+		filename: '[name].js'
+	},
 	module: {
 		rules: [
 			{

@@ -1,26 +1,34 @@
 const webpack = require('webpack');
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	entry: {
 		vendor: './node_modules/angular/angular',
 		bundle: './app/js/main'
 	},
-	output: {
-		path: path.join(__dirname, '../dist'),
-		filename: '[name].js'
-	},
 	module: {
 		rules: [
 			{
 				test: /\.woff2$/,
 				loader: 'file-loader?name=fonts/[name].[ext]'
+			},
+			{
+				test: /\.html$/,
+				loader: 'html-loader'
 			}
 		]
 	},
 	resolve: {
 		modules: ['../../node_modules']
 	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: './app/index.html',
+			minify: {
+				removeScriptTypeAttributes: true
+			}
+		})
+	],
   optimization: {
     splitChunks: {
       chunks: 'async',
